@@ -20,7 +20,7 @@
             justify-content: center;
         }
         .container {
-            width: 100vw;
+            width: 400px
             height: 100vh;
             max-width: 420px;
             padding: 20px;
