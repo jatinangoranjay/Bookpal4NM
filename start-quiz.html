@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="top-section">
+
     <div class="container">
         <div id="quiz" class="justify-center flex-column">
             <h2 id="Chirpy-question">1. Di hari Minggu yang cerah, apa yang suka kamu lakukan?</h2>
@@ -18,18 +19,21 @@
         </div>
             </div>
             <div class="choice-container">
-                <p class="choice-text">Choice 1</p>
+                <button class="choice-text" data-number="1">Choice 1</button>
             </div>
             <div class="choice-container">
-                <p class="choice-text">Choice 2</p>
+                <button class="choice-text" data-number="2">Choice 2</button>
             </div>
             <div class="choice-container">
-                <p class="choice-text">Choice 3</p>
+                <button class="choice-text" data-number="3">Choice 3</button>
             </div>
             <div class="choice-container">
-                <p class="choice-text">Choice 4</p>
+                <button class="choice-text" data-number="4">Choice 4</button>
             </div>
         </div>
     </div>
+    <div id="result" style="display:none"></div>
+    
+    <script src="start-quiz.js"></script>
 </body>
 </html>
