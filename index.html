@@ -39,16 +39,34 @@
             font-family:  'Comfortaa', sans-serif;
             font-size: 12px;
         }
-        .top-section {
-            align-items: center;
+        .top-image {
+            align-items: center;}
+        .vending img {
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            position: relative;
+            animation: pulse 3s infinite;
         }
+        @keyframes pulse {
+            0% {
+                transform: scale(0.98);
+            }
+            70% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0.98);
+            }
+        }
+        
         .bottom-section {
             background-color: #f2ba00;
             border-radius: 5px;
             width: 100%;
             padding: 2px 0px;
             text-align: center;
-            margin-top: -5%;
+            margin-top: -4%;
             animation: fadeInup 0.3s 0.5s both;
         }
         @keyframes fadeInup {
@@ -100,7 +118,8 @@
     <div class="container">
         <div class="top-section">
             <h1>PERSONA-PAL</h1>
-            <div class="top-image"><img src="img/logo&topimage.png" alt="vending machine" style="margin-top: 1%"; width="400px"; max-width="420px"; height="auto";>
+            <div class="top-image">
+                <div class="vending"><img src="img/logo&topimage.png" alt="vending machine" style="margin-top: 1%"; width="400px"; max-width="420px"; height="auto";>
             </div>
         </div>
         <div class="bottom-section">
@@ -108,7 +127,7 @@
                 <button class="button" style="padding:16px 32 px; font-size: 16px; font-weight: bold;" onclick="window.location.href='start-quiz.html'">Press here to start</button>
                 <button class="button" style="padding:16px 32 px; font-size: 16px; font-weight: bold;" onclick="window.location.href='personasheets.html'">Persona Sheets</button>
             </div>
-            <div style="margin:0px 10px; font-family: monospace;"><p1>A fun personality quiz inspired by MBTI types, Innate Personality Traits, Cake resume, etc.</p1>
+            <div style="margin:0px 10px; font-family: monospace;"><p1>A fun personality quiz inspired by MBTI types, Innate Personality Traits, Cake resume, etc.</p1> <br>
             <p1>Made by tim New Media DKV C Palasari</p1><br></div>
         </div>
 </body>
