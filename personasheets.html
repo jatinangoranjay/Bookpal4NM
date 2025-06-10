@@ -20,29 +20,23 @@
             justify-content: center;
             text-align: center;
         }
-         h1 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    font-size: 30px;
-    font-weight: normal; 
-    font-stretch:expanded;
-    color: #ffffff;
-    background-color: #e01e10;
-    margin-top: 30px;
-    padding: 15px; 
-    border-radius:10px;
-       }
         body {
             font-family: Georgia, 'Times New Roman', Times, serif;
             background: #fff;
-            color: #d31717;
+            font-size: 32px;
+            color: #ffffff;
+            font-size: 20px;
             width: 100vw;
             min-height: 100vh;
+            max-width: 420px;
             justify-content: center;
+            align-items: center;
+            
         }
         .container {
             width: 400px;
-            height: 100vh;
-            max-width: 420px;
+            height: auto 100%;
+            max-width: 400px;
             padding: 20px;
             margin: 0 auto;
             background-color: #f2ba00;
@@ -111,26 +105,55 @@
     .justify-center {
         justify-content: center;
     }
+    .image-gallery {
+        display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 10px;
+            font-size: 16px;
+            align-items: center;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+    }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        footer {
+            text-align: center;
+        }
+     h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 30px;
+    font-weight: normal; 
+    font-stretch:expanded;
+    color: #ffffff;
+    background-color: #e01e10;
+    margin-top: 30px;
+    padding: 15px; 
+    border-radius:10px;}
       
     </style>
 </head>
 <body>
     <h1>Persona Sheets</h1>
-    <div class="quiz-container">
-        <div class="start-page" id="start-page">
+    <div class="container">
+        <div class="g" id="start-page">
             <div class="container">
                 <div class="image-gallery">
                     <p1>ROMANTICAL: Love Birds, love is in the air .</p1>
-                    <img src="Image res/Lovers.png" alt="Lovers">
+                    <img src="personasheets img/iconlove.png" alt="Lovers"
                     <br>
                     <p1>WANDERER: Always wandering and Optimistic</p1>
-                    <img src="Image res/wander.png" alt="WANDERER">
+                    <img src="personasheets img/iconwander.png" alt="WANDERER">
                     <br>
                     <p1>MYSTERIOUS: Sometimes haunts you down and eat up fries with ketchup</p1>
-                    <img src="Image res/Horror.png" alt="Horror">
+                    <img src="personasheets img/iconhorror.png"Horror">
                     <br>
                     <p1>PHILOSPHER: Think too much about history and existential things, easily get dizzy by his own head</p1>
-                    <img src="Image res/philosopher.png" alt="PHILOSPHER">
+                    <img src="personasheets img/iconthink.png" alt="PHILOSPHER">
                     <br>
                 </div>
             </div>
