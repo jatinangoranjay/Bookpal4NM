@@ -5,8 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persona Sheets</title>
     <icon><a href="img/iconkepala.png"></a></icon>
+    <style>
+       * {
+            box-sizing: border-box;
+            margin: 0; padding: 0;
+            
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            justify-content: center;
+            text-align: center;
+        }
+         h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 30px;
+    font-weight: normal; 
+    font-stretch:expanded;
+    color: #ffffff;
+    background-color: #e01e10;
+    margin-top: 30px;
+    padding: 15px; 
+    border-radius:10px;
+       }
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #fff;
+            color: #d31717;
+            width: 100vw;
+            min-height: 100vh;
+            justify-content: center;
+        }
+        .container {
+            width: 400px;
+            height: 100vh;
+            max-width: 420px;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: #f2ba00;
+            align-content: center;
+            justify-content: center;
+            font-family:  'Comfortaa', sans-serif;
+            font-size: 12px;
+        }
+        .choice-container {
+            display: flex;
+            margin-bottom: 10px; margin-top: 20px;
+            border-radius: 18px;
+            align-items: center;
+            width: 100%;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        
+        .choice-text {
+            padding: 15px 20px;
+            color: #50116d;
+            background-color: #fff;
+            border-radius: 20px;
+            width: 100%;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .choice-container:hover {
+            cursor: pointer;
+            transform: scale(1.04);
+            color: #ffffff;
+            box-shadow: 0px 1px;
+            background-color: #bf73eb;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #50116d;
+            background-color: #fff;
+            text-align: justify;
+            padding: 15px 20px;
+            border-radius: 20px;
+            margin: 3px 10px;           
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-center {
+        justify-content: center;
+        align-items: center;
+    }
+    .justify-center {
+        justify-content: center;
+    }
+      
+    </style>
 </head>
 <body>
-    <h1>Persona anjai tes</h1>
+    <h1>Persona Sheets</h1>
+    <div class="quiz-container">
+        <div class="start-page" id="start-page">
+            <div class="container">
+                <div class="image-gallery">
+                    <p1>ROMANTICAL: Love Birds, love is in the air .</p1>
+                    <img src="Image res/Lovers.png" alt="Lovers">
+                    <br>
+                    <p1>WANDERER: Always wandering and Optimistic</p1>
+                    <img src="Image res/wander.png" alt="WANDERER">
+                    <br>
+                    <p1>MYSTERIOUS: Sometimes haunts you down and eat up fries with ketchup</p1>
+                    <img src="Image res/Horror.png" alt="Horror">
+                    <br>
+                    <p1>PHILOSPHER: Think too much about history and existential things, easily get dizzy by his own head</p1>
+                    <img src="Image res/philosopher.png" alt="PHILOSPHER">
+                    <br>
+                </div>
+            </div>
 </body>
 </html>
