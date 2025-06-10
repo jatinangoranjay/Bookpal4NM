@@ -139,12 +139,12 @@ function showResult() {
     let max = Math.max(...answersCount);
     // Jika ada poin sama, indexOf akan mengambil index terkecil (urutan paling awal)
     let personalityIndex = answersCount.indexOf(max);
-    let personality = ["A", "B", "C", "D"][personalityIndex];
+    let personality = ["Yang Misterius", "Sang Penjelajah", "Seorang Pemikir filsuf", "Seorang Lovebird"][personalityIndex];
     let descriptions = [
-        "Kamu adalah tipe A: Produktif dan terorganisir!",
-        "Kamu adalah tipe B: Santai dan suka menikmati hidup!",
-        "Kamu adalah tipe C: Reflektif dan penuh pertimbangan!",
-        "Kamu adalah tipe D: Romantis dan penuh kasih sayang!"
+        "Kamu adalah Orang Yang Misterius: Kreatif, suka tantangan dan rasa penasaran tinggi!",
+        "Kamu adalah Sang Penjelajah: Santai dan suka menikmati hidup!",
+        "Kamu adalah Seorang Pemikir filsuf: Reflektif dan penuh pertimbangan!",
+        "Kamu adalah Seorang Lovebird: Romantis dan penuh kasih sayang!"
     ];
     resultEl.innerHTML = `<h2>Hasil Kepribadianmu: ${personality}</h2><p>${descriptions[personalityIndex]}</p>`;
 }
